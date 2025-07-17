@@ -1,0 +1,27 @@
+# Normalize line endings for all text files
+* text=auto
+
+# Java and XML files as text
+*.java text diff
+*.xml text diff
+
+# Properties and YAML as text with LF
+*.properties text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Windows batch files
+*.cmd text eol=crlf
+
+# Maven wrapper scripts
+/mvnw text eol=lf
+/mvnw.cmd text eol=crlf
+
+# Ignore binary diffs
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
