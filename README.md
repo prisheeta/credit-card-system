@@ -13,6 +13,9 @@ This is a microservices-based Credit Card Platform. Features include:
 
 ## Architecture
 - **API Gateway** (Spring Cloud Gateway)
+- API Gateway is included for future UI integration and centralized routing.
+  Currently, it forwards requests to microservices (e.g., Catalog Service) and 
+  will also integrate normal JWT authentication if time permits
 - **Microservices**:
    - Catalog Service (Browse credit cards)
    - Application Service (Apply for credit card)
