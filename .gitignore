@@ -53,3 +53,4 @@ application-local.properties
 
 # Vim/Editor swap files
 *.swp
+/credit-card-catalog-service/target
