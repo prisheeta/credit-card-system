@@ -12,13 +12,13 @@
     <name>Credit Card System</name>
     <description>Monorepo for Credit Card System Microservices</description>
 
-<!--    <modules>-->
-<!--        <module>api-gateway</module>-->
-<!--        <module>credit-card-catalog-service</module>-->
+   <modules>
+       <module>api-gateway</module>
+       <module>credit-card-catalog-service</module>
 <!--        <module>application-service</module>-->
 <!--        <module>approval-service</module>-->
 <!--        <module>notification-service</module>-->
-<!--    </modules>-->
+   </modules>
 
     <properties>
         <java.version>17</java.version>
@@ -36,12 +36,27 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- Spring Cloud BOM -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>2023.0.3</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- For Lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.32</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- For Swagger/OpenAPI -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>2.6.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
